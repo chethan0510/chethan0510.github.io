@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta name="author" content="Chethan Kamath" />
+  <meta name="keywords" content="Chethan Kamath, Institute of Science and Technology, Austria, IST, Pietrzak, Chatterjee, Indian Institute of Science, IISc, Cryptography, Computer Science" />
+  <link rel="stylesheet" type="text/css" href="Resources/pagestyle.css">
+<!--   <link rel="shortcut icon" href="Resources/Icon.ico"/> -->
+  <title>Chethan Kamath</title>
+
+<!--   Mathjax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!--   Link to Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45407362-1', 'ac.at');
+    ga('send', 'pageview');
+  </script>
+<!-- Toggle visibility of synopsis -->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
+  
+</head>
+
+<body>
+  <div id="box1">
+  <div id="box2">
+  <!--<img class="imgright" src="Resources/01.jpg" px="" width="200" height="250">-->
+  <h1>Chethan Kamath</h1>
+  <br>
+	<div style="float:left;>
+  <a href="https://ist.ac.at/">Tel Aviv University </a> <br>
+  School of Computer Science, Tel Aviv<br>
+  E-mail: ckamath at protonmail dot com <br><a href="Resources/Documents/ckamath_protonmail.asc">PGP Key</a> (identity: e-mail address)<br> 
+  <br>
+  </div>
+  <div style="float:right;">
+  <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/k/Kamath:Chethan.html" target="_blank"><img src="Resources/DBLP.png" title="DBLP" width=50 height=50></a> 
+  <a href="https://scholar.google.co.il/citations?view_op=list_works&user=KIleuUAAAAAJ" target="_blank"><img src="Resources/GScholar.png" title="Google Scholar" width=50 height=50></a> 
+	<a href="https://crypto.stackexchange.com/users/11441/occams-trimmer?tab=profile" target="_blank"><img src="Resources/SE.png" title="Cryptography StackExchange" width=45 height=50></a> 
+<!--    style="border: 5px solid #555" -->
+   </div>
+  <br><br><br><br><br><br>
+  <h2> Short Bio </h2>
+  <p>
+    I am a post-doc at Tel Aviv University, hosted by  <a href="https://sites.google.com/site/nirbitansky/">Nir Bitansky</a> and <a href="http://people.csail.mit.edu/omerpa/">Omer Paneth</a> and supported by an <a href="https://azrielifoundation.org/fellows/internationalpostdoctoral/">Azrieli fellowship</a>.
+    <br>
+  	<ul>
+ 		<li> Nov 2020-Mar 2021: Post-doc with <a href="https://iuuk.mff.cuni.cz/~hubacek/">Pavel Hub&#225&#269ek</a> at Charles University
+  		<li> Mar-Aug 2020: Post-doc with <a href="http://www.ccs.neu.edu/home/wichs/">Daniel Wichs</a> at Northeastern university
+		<li> 2014-2020: PhD from <a href="https://ist.ac.at/">IST Austria</a> under the supervision of <a href="http://pub.ist.ac.at/crypto/">Krzysztof Pietrzak</a>. My PhD thesis was titled <i> On the Average-Case Hardness of Total Search Problems</i>.
+		<li> 2010-2013: Master's in CS from
+			<a href="http://www.iisc.ernet.in/"  target="_blank"> Indian Institute of Science</a>, Bangalore under the guidance of
+			<a href="http://drona.csa.iisc.ernet.in/~sanjit/" target="_blank">Sanjit Chatterjee</a>. The thesis was titled <i> Constructing Provably Secure Identity-Based Signature Schemes</i>.</li> 
+		<li> 2005-2009: Bachelor's in CS from University of Kerala (at <a href="http://www.tkmce.ac.in/" target="_blank"> TKM College of Engineering</a>, Kollam).</li>
+	</ul>
+  </p>
+
+  <h2> Research Interests </h2>
+    My primary field of research is cryptography, particularly its foundations. But my interests extend to computational complexity theory and theoretical computer science in general.
+  <!--<p>
+    <ul>
+      <li>Foundations of Cryptography
+      <li>Complexity Theory
+    </ul>
+  </p>-->
+
+<!--   <h2><a href="Resources/Documents/CV.pdf" target="_blank">Curriculum Vitae</a></h2> -->
+
+  
+
+  <h2>
+    Publications 
+  </h2>
+  
+  <!--<h3>
+  <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/k/Kamath:Chethan.html" target="_blank">DBLP</a> 
+  <a href="https://scholar.google.co.il/citations?view_op=list_works&user=KIleuUAAAAAJ" target="_blank">Google Scholar</a>
+  </h3>-->
+  
+    <ol reversed>
+      <!--<li>
+	<span xml:lang="EN-US" lang="EN-US"><b> 
+	  <a href=""> 
+	    Verifiable Delay Functions from Lucas Sequences
+	  </a>
+	  (<a href="">PDF</a></b>)<br>
+	  with Pavel Hub&#225&#269ek and Tomas Krnak <br>
+	  Eprint 2020<br>
+	</span><br>
+      </li>-->
+  	<li>
+  	<span xml:lang="EN-US" lang="EN-US">
+  		<b>Practical Statistically-Sound Proofs of Exponentiation</b>
+  		<br>
+  			with Charlotte Hoffman, Pavel Hub&#225&#269ek and Krzysztof Pietrzak
+  			<br>
+  				Eprint 2021
+  				<br>
+  					[<a onclick="toggle_visibility('EPRINT:HHKP21');">Synopsis</a>]
+  					[<a href="">Paper</a>]
+  					<br><br>
+  							<div style="display:none;background-color: rgb(235, 235, 235);" id="EPRINT:HHKP21"> 
+  								<b>Problem:</b> 
+  								<br>
+  									<b>Result:</b> 
+  									<br>
+  									</div>
+  									<br>
+  									</span>
+  								</li>
+     <li>
+    	<span xml:lang="EN-US" lang="EN-US">
+    		<b>On Treewidth, Separators and Yao’s Garbling</b>
+    		<br>
+    			with Karen Klein and Krzysztof Pietrzak
+    			<br>
+    				TCC 2021, to appear
+    				<br>
+    					[<a onclick="toggle_visibility('TCC:KKP21');">Synopsis</a>]
+    					[<a href="https://eprint.iacr.org/2021/926">Paper</a>]
+    					<br><br>
+    							<div style="display:none;background-color: rgb(235, 235, 235);" id="TCC:KKP21"> 
+    								<b>Problem:</b> In the 80s, Yao proposed an elegant way to <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">securely evaluate functions</a> using <a href="https://en.wikipedia.org/wiki/Garbled_circuit">garbled circuits</a>. Is his garbling scheme fully secure?
+    								<br>
+    									<b>Result:</b> Although security in a simulation-based model is known to be unattainable, we show that it is secure in the -- next-best -- indistinguishability-based model for some circuit classes like <a href="https://en.wikipedia.org/wiki/NC_(complexity)">\(\mathbf{NC}^1\)</a>. To this end, we use tools from algorithmic graph theory (e.g., <a href="https://en.wikipedia.org/wiki/Treewidth">treewidth</a>) and <a href="https://en.wikipedia.org/wiki/Circuit_complexity">circuit complexity</a>.
+    									<br>
+    									</div>
+    									<br>
+    									</span>
+    								</li>
+	<li>
+		<span xml:lang="EN-US" lang="EN-US">
+			<b>Limits on the Adaptive Security of Yao’s Garbling</b>
+			<br>
+				with Karen Klein, Krzysztof Pietrzak and Daniel Wichs
+				<br>
+					Crypto 2021
+					<br>
+						[<a onclick="toggle_visibility('TCC:KKPW21b');">Synopsis</a>]
+						[<a href="https://eprint.iacr.org/2021/945">Paper</a>]
+						<br><br>
+								<div style="display:none;background-color: rgb(235, 235, 235);" id="TCC:KKPW21b"> 
+									<b>Problem:</b> Can the upper bounds for loss in security of <a href="https://en.wikipedia.org/wiki/Garbled_circuit">Yao's garbling</a> shown in [7,18] improved?
+									<br>
+										<b>Result:</b> We show that this is not possible using black-box reductions by building upon the result in [16]. As in [16], we use <a href="https://en.wikipedia.org/wiki/Pebble_game">pebbling</a> lower bounds and oracle separations.
+										<br>
+										</div>
+										<br>
+										</span>
+									</li>
+	<li>
+		<span xml:lang="EN-US" lang="EN-US">
+			<b>On the Cost of Adaptivity in Security Games on Graphs</b>
+			<br>
+		with Karen Klein, Krzysztof Pietrzak and Michael Walter 
+		<br>
+			TCC 2021, to appear
+			<br>
+				[<a onclick="toggle_visibility('TCC:KKPW21a');">Synopsis</a>]
+				[<a href="https://eprint.iacr.org/2021/059">Paper</a>]
+				<br><br>
+				<div style="display:none;background-color: rgb(235, 235, 235);" id="TCC:KKPW21a"> 
+					<b>Problem:</b> Are the upper bounds for loss in security established in [7,10] optimal?
+					<br>
+					<b>Result:</b> We show that for certain cryptographic primitives whose security model involves the adversary constructing a dynamic graph -- like, e.g., constrained PRF and group key agreement --  this is indeed the case when restricted to 'oblivious' reductions. In particular, we use <a href="https://en.wikipedia.org/wiki/Pebble_game">pebbling</a> lower bounds and oracle separations to show fine-grained lower bounds on loss in security for these primitives.
+					<br>
+					</div>
+		<br>
+		</span>
+	</li>		
+      <li>
+		<span xml:lang="EN-US" lang="EN-US">
+		  <b>Keep the Dirt: Tainted TreeKEM, an Efficient and Provably Secure Group Key Agreement Protocol</b>
+		  <br>
+		    with Joël Alwen, Margarita Capretto, Miguel Cueto, Karen Klein, Guillermo Pascual-Perez, Krzysztof Pietrzak and Michael Walter 
+		  <br>
+		    S&ampP 2021
+		  <br>
+		    [<a onclick="toggle_visibility('SP:ACC+21');">Synopsis</a>]
+		    [<a href="https://eprint.iacr.org/2020/1162">Paper</a>]
+		    <br><br>
+		    <div style="display:none;background-color: rgb(235, 235, 235);" id="SP:ACC+21"> 
+		      <b>Problem:</b> Is TreeKEM, a continuous group key-agreement messaging protocol (currently being standardised by <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">IETF</a>), secure?
+		    <br>
+		      <b>Result:</b> We propose Tainted TreeKEM, a slight variant of TreeKEM, and show that it is secure in a passive setting with only quadratic loss in security (in the <a href="https://en.wikipedia.org/wiki/Random_oracle">random oracle model</a>).
+		    <br>
+		    </div>
+		  <br>
+		</span>
+	</li>
+	<li>
+		<span xml:lang="EN-US" lang="EN-US">
+		  <b>On Average-Case Hardness in TFNP from One-Way Functions</b>
+		  <br>
+		    with Pavel Hub&#225&#269ek, Karel Král and Veronika Slívová 
+		  <br>
+		    TCC 2020
+		  <br>
+		    [<a onclick="toggle_visibility('TCC:HKKS20');">Synopsis</a>]
+		    [<a href="https://eprint.iacr.org/2020/1162">Paper</a>]
+		    <br><br>
+		    <div style="display:none;background-color: rgb(235, 235, 235);" id="TCC:HKKS20"> 
+		      <b>Problem:</b> In [12,13] we showed the existence of hard problems in lower sub-classes of <a href="https://en.wikipedia.org/wiki/TFNP">TFNP</a> under some cryptographic assumptions. But can we construct hard problems in TFNP from <a href="https://en.wikipedia.org/wiki/One-way_function">one-way functions</a>, the simplest assumption in cryptography?
+		    <br>
+		      <b>Result:</b>  For a restricted class of black-box reductions, we show that this is not possible.
+		    <br>
+		    </div>
+		  <br>
+		</span>
+      </li>
+       <li>
+	<span xml:lang="EN-US" lang="EN-US">
+	  <b>Finding a Nash Equilibrium is no Easier than Breaking Fiat-Shamir</b>
+	  <br>
+	    with Arka Rai Choudhary, Pavel Hub&#225&#269ek, Krzysztof Pietrzak, Alon Rosen and Guy Rothblum
+	  <br>
+	    STOC 2019
+	  <br>
+	    [<a onclick="toggle_visibility('STOC:CHK+19');">Synopsis</a>]
+	    [<a href="https://eprint.iacr.org/2019/549">Paper</a>]
+	    [<a href="Resources/Documents/CHK+[s].pdf">Slides</a>]
+	    <br><br>
+	    <div style="display:none;background-color: rgb(235, 235, 235);" id="STOC:CHK+19"> 
+	      <b>Problem:</b> How hard is it to find a <a href="https://en.wikipedia.org/wiki/Nash_equilibrium">Nash equilibrium</a>?
+	    <br>
+	      <b>Result:</b> We show that the complexity class <a href="https://en.wikipedia.org/wiki/PPAD_(complexity)">PPAD</a>, for which Nash equilibrium is complete, is (average-case) hard as long as the <a href="https://en.wikipedia.org/wiki/Fiat%E2%80%93Shamir_heuristic">Fiat-Shamir</a> transform is sound. Furthermore we extend this hardness to the class <a href="https://en.wikipedia.org/wiki/TFNP#CLS">CLS</a> \(\subseteq\) PPAD.
+	    <br>
+	    </div>
+	  <br>
+	</span>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US">
+	  <b>PPAD-Hardness via Iterated Squaring Modulo a Composite</b>
+	  <br>
+	    with Arka Rai Choudhary, Pavel Hub&#225&#269ek, Krzysztof Pietrzak, Alon Rosen and Guy Rothblum
+	  <br>
+	    Eprint 2019
+	  <br>
+	    [<a onclick="toggle_visibility('EPRINT:CHK+19');">Synopsis</a>]
+	    [<a href="https://eprint.iacr.org/2019/667">Paper</a>]
+	    <br><br>
+	    <div style="display:none;background-color: rgb(235, 235, 235);" id="EPRINT:CHK+19"> 
+	      <b>Problem:</b> How hard is the complexity class <a href="https://en.wikipedia.org/wiki/PPAD_(complexity)">PPAD</a>?
+	    <br>
+	      <b>Result:</b> We show (average-case) hardness in PPAD under the assumption that the problem of repeated squaring in the <a href="https://en.wikipedia.org/wiki/RSA_numbers">RSA modulus</a> is hard. Furthermore we extend this hardness to the class <a href="https://en.wikipedia.org/wiki/TFNP#CLS">CLS</a> \(\subseteq\) PPAD.
+	    <br>
+	    <b>Remark:</b> The results in the paper are superseded by [13].
+	    <br>
+	    </div>
+	  <br>
+	</span>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US">
+	  <b>Reversible Proofs of Sequential Work</b>
+	  <br>
+	    with Hamza Abusalah, Karen Klein, Krzysztof Pietrzak and Michael Walter
+	  <br>
+	    Eurocrypt 2019
+	  <br>
+	    [<a onclick="toggle_visibility('EC:ACK+19');">Synopsis</a>]
+	    [<a href="https://eprint.iacr.org/2019/252">Paper</a>]
+	    <br><br>
+	    <div style="display:none;background-color: rgb(235, 235, 235);" id="EC:ACK+19"> 
+	      <b>Problem:</b> A proof of sequential work (also known as proof of time) allows a prover to convince a verifier that it has done a certain amount of sequential computation. Can we have a proof of sequential work where the computation is reversible?</a>
+	    <br>
+	      <b>Result:</b> We show this to be possible in the <a href="https://en.wikipedia.org/wiki/Random_oracle">random oracle model</a> by exploiting the <a href="https://en.wikipedia.org/wiki/Skip_list"> Skip list</a> data structure.
+	    <br>
+	    
+	    </div>
+	  <br>
+	</span>
+      </li>
+       <li>
+	  	<span xml:lang="EN-US" lang="EN-US">
+	  		<b>Adaptively-Secure Proxy Re-encryption</b>
+	  		<br>
+	  			with Georg Fuchsbauer, Karen Klein and Krzysztof Pietrzak
+	  			<br>
+	  				PKC 2019
+	  				<br>
+	  					[<a onclick="toggle_visibility('PKC:FKKP19');">Synopsis</a>]
+	  					[<a href="https://eprint.iacr.org/2018/426">Paper</a>]
+	  					<br><br>
+	  							<div style="display:none;background-color: rgb(235, 235, 235);" id="PKC:FKKP19"> 
+	  								<b>Problem:</b> A <a href="https://en.wikipedia.org/wiki/Proxy_re-encryption">proxy re-encryption</a> (PRE) is a public-key encryption scheme that allows the holder of a key \(pk\) to derive a re-encryption key for any other key \(pk'\). This re-encryption key lets anyone transform ciphertexts under \(pk\) into ciphertexts under \(pk'\) without having to know the underlying message. Can we have secure PRE in the setting where the adversary gets to corrupt users in arbitrary, adaptive manner?
+	  								<br>
+	  									<b>Result:</b> We show that in case the graph constructed by the adversary is restricted, then some of the constructions already achieve adaptive security. We make use of the framework from [7].
+	  									<br>
+	  									</div>
+	  									<br>
+	  									</span>
+	  								</li>
+  
+  <li>
+  	<span xml:lang="EN-US" lang="EN-US">
+  		<b>On the Memory-Hardness of Data-Independent Password-Hashing Functions</b>
+  		<br>
+  			with Joël Alwen, Peter Gaži, Karen Klein, Georg Osang, Krzysztof Pietrzak, Leonid Reyzin, Michal Rolínek and Michal Rybár
+  			<br>
+  				AsiaCCS 2018
+  				<br>
+  					[<a onclick="toggle_visibility('AsiaCCS:AGK+18');">Synopsis</a>]
+  					[<a href="https://eprint.iacr.org/2016/783">Paper</a>]
+  					<br><br>
+  							<div style="display:none;background-color: rgb(235, 235, 235);" id="AsiaCCS:AGK+18"> 
+  								<b>Problem:</b> TBF
+  								<br>
+  									<b>Result:</b> TBF
+  									<br>
+  									</div>
+  									<br>
+  									</span>
+  								</li>
+      <li>
+      	<span xml:lang="EN-US" lang="EN-US">
+      		<b>Private Set-Intersection with Common Set-up</b>
+      		<br>
+      			with Sanjit Chatterjee and Vikas Kumar
+      			<br>
+      				AIMC 2018, 12(1)
+      				<br>
+      					[<a onclick="toggle_visibility('MISC:CKK18');">Synopsis</a>]
+      					[<a href="http://aimsciences.org/article/doi/10.3934/amc.2018002">Paper</a>]
+      					<br><br>
+      							<div style="display:none;background-color: rgb(235, 235, 235);" id="MISC:CKK18"> 
+      								<b>Problem:</b> TBF
+      								<br>
+      									<b>Result:</b> TBF
+      									<br>
+      									</div>
+      									<br>
+      									</span>
+      								</li>
+      <li>
+      	<span xml:lang="EN-US" lang="EN-US">
+      		<b>Be Adaptive, Avoid Overcommitting</b>
+      		<br>
+      			with Zahra Jafargholi, Karen Klein, Ilan Komargodski, Krzysztof Pietrzak and Daniel Wichs
+      			<br>
+      				Crypto 2017
+      				<br>
+      					[<a onclick="toggle_visibility('C:JKK+17');">Synopsis</a>]
+      					[<a href="https://eprint.iacr.org/2017/515">Paper</a>]
+      					<br><br>
+      							<div style="display:none;background-color: rgb(235, 235, 235);" id="C:JKK+17"> 
+      								<b>Problem:</b> TBF
+      								<br>
+      									<b>Result:</b> TBF
+      									<br>
+      									</div>
+      									<br>
+      									</span>
+      								</li>
+  
+  <li>
+  	<span xml:lang="EN-US" lang="EN-US">
+  		<b>Practical Round-Optimal Blind Signatures in the Standard Model from Weaker Assumptions</b>
+  		<br>
+  			with Georg Fuchsbauer, Christian Hanser and Daniel Slamanig
+  			<br>
+  				SCN 2016
+  				<br>
+  					[<a onclick="toggle_visibility('SCN:FKHS16');">Synopsis</a>]
+  					[<a href="https://eprint.iacr.org/2016/662">Paper</a>]
+  					[<a href="Resources/Documents/SCN.pdf">Slides</a>]
+  					<br><br>
+  							<div style="display:none;background-color: rgb(235, 235, 235);" id="SCN:FKHS16"> 
+  								<b>Problem:</b> TBF
+  								<br>
+  									<b>Result:</b> TBF
+  									<br>
+  									</div>
+  									<br>
+  									</span>
+  								</li>
+  <li>
+  	<span xml:lang="EN-US" lang="EN-US">
+  		<b>On the Complexity of Scrypt and Proofs of Space in the Parallel Random Oracle Model</b>
+  		<br>
+  			with Joël Alwen, Binyi Chen, Vladimir Kolmogorov, Krzysztof Pietrzak and Stefano Tessaro
+  			<br>
+  				Eurocrypt 2016
+  				<br>
+  					[<a onclick="toggle_visibility('EC:ACK+16');">Synopsis</a>]
+  					[<a href="http://eprint.iacr.org/2016/100">Paper</a>]
+  					<br><br>
+  							<div style="display:none;background-color: rgb(235, 235, 235);" id="EC:ACK+16"> 
+  								<b>Problem:</b> TBF
+  								<br>
+  									<b>Result:</b> TBF
+  									<br>
+  									</div>
+  									<br>
+  									</span>
+  								</li> 
+
+      <li>
+   		<span xml:lang="EN-US" lang="EN-US">
+   			<b>A Closer Look at Multiple-Forking: Leveraging (In)dependence for a Tighter Bound</b>
+   			<br>
+   				with Sanjit Chatterjee
+   				<br>
+   					Algorithmica 2016, 74(4)
+   					<br>
+   						[<a onclick="toggle_visibility('MISC:ChaKam16a');">Synopsis</a>]
+   						[<a href="http://eprint.iacr.org/2013/651">Paper</a>]
+	  					[<a href="Resources/Documents/CK13a(Slides).pdf">Slides</a>]
+   						<br><br>
+   								<div style="display:none;background-color: rgb(235, 235, 235);" id="MISC:ChaKam16a"> 
+   									<b>Problem:</b> TBF
+   									<br>
+   										<b>Result:</b> TBF
+   										<br>
+   										</div>
+   										<br>
+   										</span>
+   									</li> 
+	<li>
+		<span xml:lang="EN-US" lang="EN-US">
+			<b>From Selective-ID to Full-ID IBS without Random Oracles</b>
+			<br>
+				with Sanjit Chatterjee
+				<br>
+					SPACE 2013
+					<br>
+						[<a onclick="toggle_visibility('MISC:ChaKam16b');">Synopsis</a>]
+						[<a href="http://eprint.iacr.org/2013/651">Paper</a>]
+						[<a href="Resources/Documents/CK13b(Slides).pdf">Slides</a>]
+						<br><br>
+								<div style="display:none;background-color: rgb(235, 235, 235);" id="MISC:ChaKam16b"> 
+									<b>Problem:</b> TBF
+									<br>
+										<b>Result:</b> TBF
+										<br>
+										</div>
+										<br>
+										</span>
+									</li> 		
+   	
+   	<li>
+   		<span xml:lang="EN-US" lang="EN-US">
+   			<b>Galindo-Garcia IBS, Improved</b>
+   			<br>
+   				with Sanjit Chatterjee
+   				<br>
+   					Preprint
+   					<br>
+   						[<a onclick="toggle_visibility('MISC:ChaKam13');">Synopsis</a>]
+   						[<a href="Resources/Documents/CK13c.pdf">Paper</a>]
+   						<br><br>
+   								<div style="display:none;background-color: rgb(235, 235, 235);" id="MISC:ChaKam13"> 
+   									<b>Problem:</b> TBF
+   									<br>
+   										<b>Result:</b> TBF
+   										<br>
+   										</div>
+   										<br>
+   										</span>
+   									</li> 								
+   	<li>
+   		<span xml:lang="EN-US" lang="EN-US">
+   			<b>Galindo-Garcia IBS, Revisited</b>
+   			<br>
+   				with Sanjit Chatterjee and Vikas Kumar
+   				<br>
+   					ICISC 2012
+   					<br>
+   						[<a onclick="toggle_visibility('ISISC:ChaKamKum13');">Synopsis</a>]
+   						[<a href="http://eprint.iacr.org/2012/646">Paper</a>]
+   						<br><br>
+   								<div style="display:none;background-color: rgb(235, 235, 235);" id="ISISC:ChaKamKum13"> 
+   									<b>Problem:</b> TBF
+   									<br>
+   										<b>Result:</b> TBF
+   										<br>
+   										</div>
+   										<br>
+   										</span>
+   									</li> 
+    </ol>
+
+  <h2>External Reviews</h2>
+    <ul>
+      <li> ACNS 2017 </li>
+      <li> Asiacrypt 2014, 2016 </li>
+      <li> Crypto 2017-21 </li>
+      <li> Eurocrypt 2016-18, 2021 </li>
+      <li> ICITS 2017 </li>
+      <li> ITCS 2020, 2022 </li>
+      <li> IWSEC 2012 </li>
+      <li> MFCS 2020 </li>
+   	  <li> ProvSec 2014 </li>
+      <li> STOC 2020 </li>
+      <li> TCC 2016-B, 2017, 2020 </li> 
+    </ul>
+    
+  <h2>Internships/Visits</h2>
+    <ul>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> <a href="http://simons.berkeley.edu"> Simons Institute </a> </b> - Summer 2015<br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> <a href="http://factcenter.org/"> FACT Center </a> </b> - Summer 2017<br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> <a href="https://iuuk.mff.cuni.cz/"> Charles University, Prague </a> </b> - October 2017,2019<br>
+      </li>
+    </ul>
+    
+  <h2>Misc.</h2>
+    <ul>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> On the Average-Case Hardness of Total Search Problems
+	(<a href="Resources/Documents/PThesis.pdf">PDF</a> <a href="Resources/Documents/PThesis[s].pdf">Slides</a></b>)<br>
+	PhD Thesis<br></span><br>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Python code for finding the space-complexity of (small) DAGs<br></b>
+	Black Pebbling: <a href="Resources/Documents/Black.py">Code </a>
+	<a href="Resources/Documents/Skiplist_9.txt">Sample Input (Skiplist)</a>
+	<a href="Resources/Documents/Skiplist_9.pdf"> Output</a><br>
+	Revsersible Pebbling:<a href="Resources/Documents/Reversible.py">Code </a>
+	<a href="Resources/Documents/Chain_9.txt">Sample Input (Chain)</a>
+	<a href="Resources/Documents/Chain_9.pdf"> Output</a><br><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Time-Lock Puzzles
+	(<a href="Resources/Documents/TLP.pdf">Slides</a></b>)<br>
+	Think and Drink, IST Austria <br><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Adaptively-Secure Secret Sharing
+	(<a href="Resources/Documents/SS.pdf">Slides</a></b>)<br>
+	Talk given at Czech Academy of Sciences, Prague (<a href="https://calendar.math.cas.cz/complexity-seminar">Complexity Seminar</a>) <br></span><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Space-Time Trade-offs
+	(<a href="Resources/Documents/Space-Time_Trade-off.pdf">Notes</a></b>)<br>
+	Lecture given as part of a course at IDC, Herzliya <br></span><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Schnorr Signature Scheme
+	(<a href="Resources/Documents/Schnorr.pdf">Slides</a></b>)<br>
+	Tutorial in <a href="http://drona.csa.iisc.ernet.in/~sanjit/E0335.html">E0-335</a><br></span><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Learning with Errors
+	(<a href="Resources/Documents/LWE.pdf">Slides</a></b>)<br>
+	Presented in <a href="https://courses.app.ist.ac.at/index.php?id=86"> CS-509 </a><br></span><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> The PCP Theorem or How to Catch a Cheat, Efficiently
+	(<a href="Resources/Documents/7m.pdf">Slides</a></b>)<br>
+	Presented in <a href="https://courses.app.ist.ac.at/oth-102-s15/"> Scientific Presentation and Conduct </a><br></span><br>
+      </li>
+       <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Constructing Provably Secure Identity-Based Signature Schemes
+	(<a href="Resources/Documents/MThesis.pdf">PDF</a> <a href="Resources/Documents/MThesis[s].pdf">Slides</a></b>)<br>
+	Master's Thesis<br></span><br>
+      </li>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> Multiple Forking: Deconstructed, Unified
+	(<a href="Resources/Documents/AC13.pdf">Slides</a></b>)<br>
+	Presented in <a href="http://www.iacr.org/conferences/asiacrypt2013/"> Asiacrypt'13 </a> rump session <br></span><br>
+      </li>
+    </ul>
+    
+<!--  <h2>Other Interests</h2>
+    <ul>
+      <li>
+	<span xml:lang="EN-US" lang="EN-US"><b> 
+	<a href="http://500px.com/ChethanKamath">500px</a>
+	<a href="https://www.goodreads.com/review/list/12700843-chethan-kamath?order=d&shelf=read&sort=rating">Goodreads</a></b><br>
+	</span><br>
+      </li>    
+    </ul>-->
+
+  <div id="footer">
+    Template inspired by 
+    <a href="http://cseweb.ucsd.edu/~rdowsley/">Rafael Dowsley</a> and 
+    <a href="https://www.ccis.northeastern.edu/~ykondi/">Yashwanth Kondi</a>
+    </p>
+  </div>
+</body>
+</html>
